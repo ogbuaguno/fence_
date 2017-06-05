@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head >
+    <meta charset="UTF-8"/>
+    <title>Youtube Comments</title>
+</head>
+<body>
+<form th:action="@{/comments/list}" method="post" >
+    <table>
+        <tr><td><input type="text" required="required" name="videoUrl" placeholder="Youtube Video URL"/></td></tr>
+        <tr><td><input type="submit" value="Get Comments"/></td></tr>
+    </table>
+</form>
+</body>
+</html>
